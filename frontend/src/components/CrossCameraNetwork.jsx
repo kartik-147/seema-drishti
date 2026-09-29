@@ -287,8 +287,8 @@ export default function CrossCameraNetwork({
               <h1 className="text-xl font-extrabold text-slate-900 tracking-tight leading-none">
                 Cross-Camera Situational Awareness
               </h1>
-              <span className="hidden sm:inline text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-red-100 text-red-700 border border-red-200 animate-pulse">
-                SITUATION #024 ACTIVE
+              <span className="hidden sm:inline text-[10px] font-mono font-bold px-2.5 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200">
+                Incident Code: SITUATION #024
               </span>
             </div>
             <p className="text-sm text-slate-500 font-medium ml-12">
@@ -321,8 +321,8 @@ export default function CrossCameraNetwork({
         <div className="flex items-center justify-between">
           <div>
             <div className="flex items-center gap-2 mb-0.5">
-              <span className="px-2 py-0.5 rounded bg-blue-600 text-white text-[10px] font-bold font-mono">
-                STEP 1
+              <span className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200 text-[10px] font-bold font-mono">
+                STAGE 1
               </span>
               <h2 className="text-base font-extrabold text-slate-900 uppercase tracking-wider">
                 What the Cameras Saw — In Sequence
@@ -554,9 +554,9 @@ export default function CrossCameraNetwork({
           {/* Left: core message */}
           <div className="space-y-3 lg:max-w-lg">
             <div className="flex items-center gap-2.5">
-              <span className="px-2 py-0.5 rounded bg-blue-600 text-white text-[10px] font-bold font-mono">STEP 2</span>
-              <div className="text-[11px] font-mono font-bold text-red-600 flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-red-500 animate-ping shrink-0"></span>
+              <span className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200 text-[10px] font-bold font-mono">STAGE 2</span>
+              <div className="text-[11px] font-mono font-bold text-slate-700 flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-red-500 shrink-0"></span>
                 ACTIVE SITUATION
               </div>
             </div>
@@ -615,7 +615,7 @@ export default function CrossCameraNetwork({
           ════════════════════════════════════════════════════════════════════ */}
       <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-6 space-y-4">
         <div className="flex items-center gap-2 mb-1">
-          <span className="px-2 py-0.5 rounded bg-blue-600 text-white text-[10px] font-bold font-mono">STEP 3</span>
+          <span className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200 text-[10px] font-bold font-mono">STAGE 3</span>
           <h2 className="text-base font-extrabold text-slate-900 uppercase tracking-wider">
             Why Were They Connected?
           </h2>
@@ -670,7 +670,7 @@ export default function CrossCameraNetwork({
       <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xs p-6 space-y-4">
         <div className="flex items-center justify-between flex-wrap gap-2">
           <div className="flex items-center gap-2">
-            <span className="px-2 py-0.5 rounded bg-blue-600 text-white text-[10px] font-bold font-mono">STEP 4</span>
+            <span className="px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200 text-[10px] font-bold font-mono">STAGE 4</span>
             <h2 className="text-base font-extrabold text-slate-900 uppercase tracking-wider">
               Border Corridor Map
             </h2>
@@ -1084,25 +1084,25 @@ export default function CrossCameraNetwork({
             <div className="flex flex-wrap gap-2">
               {[
                 {
-                  label: '🚨 Immediate QRT Intercept',
+                  label: 'Immediate QRT Intercept',
                   urgency: 'URGENT FLASH',
                   recipient: 'Sector HQ Commandant (Col. V. S. Rathore)',
                   msg: 'Situation #024 Alert: Target cross-camera movement verified across CAM-01, CAM-03, CAM-05 (770m corridor traversal). Target moving near outer boundary fence. Requesting immediate QRT Alpha patrol intercept.'
                 },
                 {
-                  label: '🔍 Confirm Cross-Camera Track',
+                  label: 'Confirm Cross-Camera Track',
                   urgency: 'PRIORITY ADVISORY',
                   recipient: 'Sector HQ Commandant (Col. V. S. Rathore)',
                   msg: 'Confirmed Cross-Camera Continuity: Trajectory established across 3 border posts in 2m 05s. Speed ~1.2m/s walking. Corroborated with optical camera frames. Logged into border registry.'
                 },
                 {
-                  label: '📡 Check Post Bravo Advisory',
+                  label: 'Check Post Bravo Advisory',
                   urgency: 'OPERATIONAL SITREP',
                   recipient: 'Check Post Bravo (Duty Officer Sub-Inspector)',
                   msg: 'Check Post Bravo Notice: Person tracked approaching your eastern perimeter corridor. Please maintain visual line of sight along boundary gate.'
                 },
                 {
-                  label: '🛡️ Border Police Joint Dispatch',
+                  label: 'Border Police Joint Dispatch',
                   urgency: 'PRIORITY ADVISORY',
                   recipient: 'District Border Police (DIG Control Room)',
                   msg: 'Joint Advisory: Situation #024 synthesized along Sector Echo. Coordinates passed to QRT patrol units. Requesting highway checkpoint awareness.'
@@ -1190,7 +1190,7 @@ export default function CrossCameraNetwork({
                 }`}
               >
                 <AlertOctagon className="w-3.5 h-3.5 text-red-500" />
-                <span>{operatorStatus === 'ESCALATED' ? '🚨 QRT Dispatched' : 'Dispatch QRT'}</span>
+                <span>{operatorStatus === 'ESCALATED' ? 'QRT Dispatched' : 'Dispatch QRT'}</span>
               </button>
               <button
                 onClick={() => {

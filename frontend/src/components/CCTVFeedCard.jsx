@@ -635,7 +635,10 @@ export default function CCTVFeedCard({
         {/* Cross-Camera Link Pill if part of Situation #024 */}
         {(isHighlighted || camera.id === 'cam_1' || camera.id === 'cam_3' || camera.id === 'cam_5') && (
           <div className="text-[10px] text-blue-700 bg-blue-50/90 px-2 py-0.5 rounded-md border border-blue-200/60 font-medium flex items-center justify-between">
-            <span>🔗 Linked to Situation #024</span>
+            <span className="flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+              <span>Linked to Situation #024</span>
+            </span>
             <span className="font-mono text-[9.5px]">CAM-01 &rarr; CAM-03 &rarr; CAM-05</span>
           </div>
         )}

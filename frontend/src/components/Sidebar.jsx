@@ -14,8 +14,8 @@ export default function Sidebar({
 }) {
   const navItems = [
     { id: 'live', label: 'Live View', icon: Video },
-    { id: 'network', label: 'Cross-Camera Network', icon: Share2, badge: 'Active' },
-    { id: 'alerts', label: 'Alerts & Events', icon: Bell, badge: unresolvedAlertsCount },
+    { id: 'network', label: 'Cross-Camera Network', icon: Share2 },
+    { id: 'alerts', label: 'Alerts & Events', icon: Bell, badge: unresolvedAlertsCount > 0 ? unresolvedAlertsCount : null },
     { id: 'health', label: 'Camera Health', icon: CheckCircle2 },
     { id: 'settings', label: 'Detection Test Lab', icon: FlaskConical },
   ];
@@ -55,52 +55,11 @@ export default function Sidebar({
         })}
       </nav>
 
-      {/* Quick Tactical Shortcuts */}
+      {/* Tactical Quick Actions */}
       <div className="space-y-2 mt-8 pt-4 border-t border-slate-200/80">
         <div className="px-3 text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
-          Modules
+          Quick Tools
         </div>
-
-        <button
-          onClick={() => setActiveTab('alerts')}
-          className={`w-full text-left px-3 py-2 rounded-lg text-xs font-medium border transition-all flex items-center justify-between cursor-pointer ${
-            activeTab === 'alerts'
-              ? 'bg-blue-50 text-blue-700 border-blue-200 font-bold'
-              : 'text-slate-700 hover:bg-white/80 hover:text-blue-600 border-transparent hover:border-slate-200'
-          }`}
-        >
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-            <span>Alerts & Events</span>
-          </div>
-          <span className="text-[10px] font-mono font-bold px-1.5 py-0.2 rounded-full bg-red-100 text-red-700">
-            {unresolvedAlertsCount}
-          </span>
-        </button>
-
-        <button
-          onClick={() => setActiveTab('network')}
-          className={`w-full text-left px-3 py-2 rounded-lg text-xs font-medium border transition-all flex items-center gap-2 cursor-pointer ${
-            activeTab === 'network'
-              ? 'bg-blue-50 text-blue-700 border-blue-200 font-bold'
-              : 'text-slate-700 hover:bg-white/80 hover:text-blue-600 border-transparent hover:border-slate-200'
-          }`}
-        >
-          <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-          <span>Cross-Camera Network</span>
-        </button>
-
-        <button
-          onClick={() => setActiveTab('settings')}
-          className={`w-full text-left px-3 py-2 rounded-lg text-xs font-medium border transition-all flex items-center gap-2 cursor-pointer ${
-            activeTab === 'settings'
-              ? 'bg-blue-50 text-blue-700 border-blue-200 font-bold'
-              : 'text-slate-700 hover:bg-white/80 hover:text-blue-600 border-transparent hover:border-slate-200'
-          }`}
-        >
-          <span className="w-2 h-2 rounded-full bg-indigo-500"></span>
-          <span>Detection Test Lab</span>
-        </button>
 
         <button
           onClick={onOpenStory}
@@ -139,14 +98,14 @@ export default function Sidebar({
           </button>
         )}
 
-        {/* Hackathon Authorship info */}
+        {/* Authorship info — custom-built, not a UI template */}
         <div className="p-3 bg-white/70 rounded-xl border border-slate-200/70 text-[11px] text-slate-500 space-y-1 mt-3">
           <div className="font-semibold text-slate-700 flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-            SIH 2026 Prototype
+            Created by Kartik Bendre
           </div>
           <p className="text-[10.5px] leading-tight text-slate-500">
-            Smart Border Camera Tracking & Night Vision Filter
+            Custom engineered border intelligence & video analytics platform
           </p>
         </div>
       </div>

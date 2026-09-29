@@ -1,16 +1,21 @@
-# React + Vite
+# सीमा Drishti (Seema Drishti) — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Smart India Hackathon 2026** | **Problem Statement: SIH26187**  
+*Ministry of Home Affairs (MHA): AI-Based Intelligent Video Analytics Platform for Border Surveillance using existing CCTV Infrastructure.*
 
-Currently, two official plugins are available:
+**Created & Engineered by Kartik Bendre**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Custom-built React 18 + Vite frontend with Tailwind CSS, featuring:
+* 6-Feed Synchronized Live Border Surveillance Command Grid
+* Spatiotemporal Cross-Camera Network & Incident Storyline Engine
+* Real-Time Video Dehazing & Night Vision CLAHE Tuner
+* Interactive Border Corridor GIS Vector Radar
+* Defense-Grade SITREP Dossier Generator & Browser Export
+* Real Ultralytics YOLOv8 Inference Test Laboratory
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Running Locally
+```bash
+npm install
+npm run dev
+```
+Open `http://localhost:5173` in your browser.

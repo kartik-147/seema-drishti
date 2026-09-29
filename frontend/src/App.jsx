@@ -444,13 +444,13 @@ export default function App() {
         {/* Center/Main Dashboard Content */}
         <main className="flex-1 p-6 space-y-5 overflow-x-hidden">
 
-          {/* Persistent SIH Demo Mode Notification & Direct Access (when navigating other modules) */}
+          {/* Persistent Situation #024 Notification & Direct Access (when navigating other modules) */}
           {isDemoActive && activeTab !== 'live' && (
-            <div className="bg-white rounded-2xl border border-blue-200 shadow-2xs p-3.5 flex flex-wrap items-center justify-between gap-3 animate-in fade-in duration-150">
+            <div className="bg-white rounded-2xl border border-slate-200 shadow-2xs p-3.5 flex flex-wrap items-center justify-between gap-3 animate-in fade-in duration-150">
               <div className="flex items-center gap-2.5">
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 text-[10.5px] font-bold font-mono tracking-wider">
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span>
-                  SIH DEMO MODE ACTIVE &bull; SITUATION #024
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200 text-[10.5px] font-bold font-mono tracking-wider">
+                  <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                  INCIDENT ACTIVE &bull; SITUATION #024
                 </span>
                 <span className="text-xs font-bold text-slate-800">
                   {DEMO_SCENARIO_STEPS[demoStep - 1]?.title}:

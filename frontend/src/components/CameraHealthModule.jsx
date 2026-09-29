@@ -908,11 +908,11 @@ export default function CameraHealthModule({
 
             <div className="space-y-2">
               {[
-                { key: 'NIGHT_MIST', label: '🌙 Night Vision & River Mist Restoration', desc: 'Boosts dark ambient shadows and cuts low-light haze (CLAHE 1.65x)' },
-                { key: 'HEAVY_FOG', label: '🌫️ Dense Fog & Atmospheric Dehaze', desc: 'Deep penetration filter for winter river fog (CLAHE 1.85x, 95% Dehaze)' },
-                { key: 'RAIN_GLARE', label: '🌧️ Rain Glaze & Specular Glare Reduction', desc: 'Balances high specular reflections from wet boundary roads' },
-                { key: 'MAX_CLARITY', label: '⚡ Maximum AI Clarifier', desc: 'Full dynamic range expansion for difficult distance angles' },
-                { key: 'RAW_RESET', label: '🔄 Reset to Raw CCTV Feed', desc: 'Neutral settings (1.0x contrast, 1.0x brightness, 0% dehaze)' }
+                { key: 'NIGHT_MIST', label: 'Night Vision & River Mist Restoration', desc: 'Boosts dark ambient shadows and cuts low-light haze (CLAHE 1.65x)' },
+                { key: 'HEAVY_FOG', label: 'Dense Fog & Atmospheric Dehaze', desc: 'Deep penetration filter for winter river fog (CLAHE 1.85x, 95% Dehaze)' },
+                { key: 'RAIN_GLARE', label: 'Rain Glaze & Specular Glare Reduction', desc: 'Balances high specular reflections from wet boundary roads' },
+                { key: 'MAX_CLARITY', label: 'Maximum AI Clarifier', desc: 'Full dynamic range expansion for difficult distance angles' },
+                { key: 'RAW_RESET', label: 'Reset to Raw CCTV Feed', desc: 'Neutral settings (1.0x contrast, 1.0x brightness, 0% dehaze)' }
               ].map((p) => (
                 <button
                   key={p.key}

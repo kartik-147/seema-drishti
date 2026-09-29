@@ -33,12 +33,12 @@ export default function DemoController({
       {/* 1. Core Mission Banner */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2.5 border-b border-slate-100">
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 text-[10.5px] font-bold font-mono tracking-wider">
-            <span className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span>
-            SIH DEMO MODE &bull; SITUATION #024
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200 text-[10.5px] font-bold font-mono tracking-wider">
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+            INCIDENT STORYLINE &bull; SITUATION #024
           </span>
           <span className="hidden md:inline text-xs font-semibold text-slate-500">
-            &bull; Operational Incident Storyline
+            &bull; Operational Progression
           </span>
         </div>
 
@@ -54,7 +54,7 @@ export default function DemoController({
       <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 bg-slate-50/80 p-3.5 rounded-xl border border-slate-200/80">
         <div className="space-y-1">
           {/* Question Tag */}
-          <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-blue-600 text-white text-[10.5px] font-bold font-mono tracking-wide">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-white text-slate-700 border border-slate-300 text-[10.5px] font-bold font-mono tracking-wide shadow-2xs">
             {currentStepData.questionAnswered.split('?')[0]}?
           </div>
 
